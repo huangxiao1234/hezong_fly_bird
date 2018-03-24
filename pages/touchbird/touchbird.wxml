@@ -1,0 +1,27 @@
+<view class="wrapBg" bindtap='jumpbird'>
+    <image class="backg" src="../image/bg_day.png"></image>
+     <movable-area class="moveviewgroup">
+    <movable-view style="height: 50px; width: 50px;top:50px" direction="all">
+    <image class="headBird1" src="../image/he0.png" style="position=absolute;top:0px" bindtouchmove='getbirdtop'></image>
+    </movable-view>
+  </movable-area> 
+    <!-- <view class="headTitle">
+       <image class="headBird" src="{{birdsrc}}" style="top:{{birdtop}}"></image> 
+    </view> -->
+    <button class="startBtn" hidden='{{buttonswitch}}' bindtap='closebutton'>start</button>
+    <view class='block'>
+    <image class="b1" src="{{blocksrc}}" style="left:{{pipeleft}};height:{{pipeheight}}" hidden=""></image>
+    <image class="b2" src="{{blocksrc2}}" style="left:{{pipeleft2}};height:{{pipe2height}}" hidden='{{b2hidden}}'></image>
+    <image class="b3" src="{{blocksrc3}}" style="left:{{pipeleft3}};height:{{pipe3height}}" hidden='{{b3hidden}}'></image></view>
+    <image class="b11" src="{{blocksrc11}}" style="left:{{pipeleft11}};height:{{pipe11height}}" hidden=""></image>
+    <image class="b22" src="{{blocksrc22}}" style="left:{{pipeleft22}};height:{{pipe22height}}" hidden='{{b22hidden}}'></image>
+    <image class="b33" src="{{blocksrc33}}" style="left:{{pipeleft33}};height:{{pipe33height}}" hidden='{{b33hidden}}'></image>
+    <view class="grassLand1">
+    <image class="g1" src="{{grasssrc}}" hidden='t'></image></view>
+    <view>
+    <image class="gameover" src='../image/text_game_over.png' hidden='{{endhidden}}'></image>
+    <image class="restart" bindtap='closebutton' src='../image/button_play.png' hidden='{{restarthidden}}'></image>
+    </view>
+<view>
+<text class='score'>得分：{{score}}</text></view>
+</view>
